@@ -1,0 +1,29 @@
+/* landscape phones, 576px and up */
+@media (min-width: 576px) {}
+
+/* tablets, 768px and up */
+@media (min-width: 768px) {}
+
+/*cdesktops, 992px and up */
+@media (min-width: 992px) {}
+
+/* large desktops, 1200px and up */
+@media (min-width: 1200px) {}
+
+/* larger desktops, 1400px and up */
+@media (min-width: 1400px) {}
+
+
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar customization */
+
+.imagem {
+    background-color: aqua;
+}
+
+.imagem img {}
