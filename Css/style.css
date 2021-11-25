@@ -26,4 +26,13 @@
     background-color: aqua;
 }
 
-.imagem img {}
+.txt {
+    z-index: 1 !important;
+    margin-top: -70px !important;
+}
+
+.txt a {
+    text-decoration: none;
+    color: rgb(68, 65, 252) !important;
+    font-size: 84px;
+}
