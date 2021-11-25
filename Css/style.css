@@ -21,10 +21,11 @@
 }
 
 /* Navbar customization */
-
-.imagem {
-    background-color: aqua;
+nav a {
+    text-decoration: none;
 }
+
+
 
 .txt {
     z-index: 1 !important;
