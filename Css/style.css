@@ -36,3 +36,10 @@
     color: rgb(68, 65, 252) !important;
     font-size: 84px;
 }
+
+.card-img-overlay button {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
