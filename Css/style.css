@@ -1,3 +1,7 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 /* landscape phones, 576px and up */
 @media (min-width: 576px) {}
 
@@ -14,6 +18,7 @@
 @media (min-width: 1400px) {}
 
 
+
 html,
 body {
     max-width: 100%;
@@ -21,7 +26,8 @@ body {
 }
 
 body {
-    background-color: #FFE9B3;
+    background-color: #E9F0F2;
+    font-family: "Special Elite", cursive !important;
 
 }
 
@@ -34,6 +40,10 @@ body {
     z-index: 10;
     max-width: 100%;
     text-decoration: white !important;
+}
+
+.navbar a:hover {
+    color: #F2E291 !important;
 }
 
 .nav-link {
@@ -64,20 +74,57 @@ body {
     transform: translateY(-50%);
 }
 
-/* Cartoes */
+/* Cartoes cervejas */
+
 .mt-0 {
-    margin-top: -5rem !important;
+    margin-top: -4rem !important;
+}
+
+.card {
+    background: none !important;
+    border: none !important;
+}
+
+.card-img-top {
+    border-radius: 0 !important;
+    border: 10px solid #A68D60;
+}
+
+.card-body {
+    font-family: "Special Elite", cursive !important;
+}
+
+.card-body .text-primary {
+    color: #A68D60 !important;
 }
 
 .txt {
     z-index: 1 !important;
-    margin-top: -70px !important;
+    margin-top: -45px !important;
+    font-family: "Special Elite", cursive !important;
+    font-weight: 400;
 }
 
 .txt a {
     text-decoration: none;
-    color: rgb(68, 65, 252) !important;
-    font-size: 84px;
+    color: #F2E291 !important;
+    background-color: #A68D60;
+}
+
+
+
+/* Lojas*/
+.titulo-lojas {
+    position: relative;
+    top: 40%;
+    color: #F2E291 !important;
+    font-size: 70px;
+    font-family: "Special Elite", cursive !important;
+    -webkit-text-stroke: 2px #A68D60;
+}
+
+.bg-lojas {
+    background: #F2CC85;
 }
 
 .card-img-overlay button {
@@ -85,4 +132,18 @@ body {
     bottom: 0;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+.btn-primary {
+    background: #F2E291;
+    border-radius: 0 !important;
+    border-color: #A68D60;
+    color: #A68D60;
+    font-family: "Special Elite", cursive !important;
+
+}
+
+.btn-primary:hover {
+    background: #A68D60;
+    border-color: #F2E291;
 }
