@@ -1,149 +1,395 @@
 /* Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/*Fonte Logo*/
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+/*Fonte Geral*/
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+@media (min-width: 0px) {
+  .navbar-brand img {
+    display: none !important;
+  }
+
+  .navbuttons {
+    display: none !important;
+  }
+
+  .navbar {
+    position: fixed;
+    background-color: var(--castanhotrans) !important;
+  }
+
+  .btnvoltarinicio {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 1vh;
+  }
+
+  .titulo-lojas {
+    font-size: 30px;
+    -webkit-text-stroke: 1px #a68d60;
+  }
+
+  .cardtop {
+    margin-top: 32px !important;
+  }
+}
 
 /* landscape phones, 576px and up */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 /* tablets, 768px and up */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .carousel-caption {
+    text-align: left !important;
+    max-width: 40% !important;
+  }
+
+  .carousel-caption p {
+    font-size: 18px;
+  }
+
+  .btnvoltarinicio {
+    font-size: 30px;
+  }
+
+  .titulo-lojas {
+    font-size: 40px;
+  }
+
+  .cardtop {
+    margin-top: 0 !important;
+  }
+}
 
 /*cdesktops, 992px and up */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .btnlogin {
+    display: none !important;
+  }
+
+  .btnloja {
+    display: none !important;
+  }
+
+  .btnvoltarinicio {
+    font-size: 50px;
+    margin: 3vh;
+    right: 0 !important;
+    width: auto;
+  }
+
+  .navbar {
+    position: absolute;
+    background: none !important;
+  }
+
+  .navbar-brand {
+    position: absolute;
+  }
+
+  .navbar-brand img {
+    display: inline-block !important;
+  }
+
+  .navbuttons {
+    display: inline-flex !important;
+  }
+
+  .titulo-lojas {
+    font-size: 50px;
+    -webkit-text-stroke: 2px #a68d60;
+  }
+}
 
 /* large desktops, 1200px and up */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .titulo-lojas {
+    font-size: 60px;
+  }
+}
 
 /* larger desktops, 1400px and up */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}
 
+/* cores utilizadas*/
 
+:root {
+  --branco: #e9f0f2;
+  --brancotrans: #e9f0f2b7;
+  --aclaro: #f2e291;
+  --aclarotrans: #f2e291b7;
+  --atorrado: #f2cc85;
+  --atorradotrans: #f2cc85b7;
+  --castanho: #a68d60;
+  --castanhotrans: #a68d60b7;
+  --preto: #0d0d0d;
+  --pretotrans: #0d0d0db7;
+}
 
 html,
 body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #E9F0F2;
-    font-family: "Special Elite", cursive !important;
+  background-color: #e9f0f2;
+  font-family: "Special Elite", cursive !important;
+}
 
+/* Formulario Login */
+
+.loginform {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  z-index: 11;
+  width: auto;
+  background-color: var(--atorrado);
+  margin-top: 20%;
+  border: 3px solid var(--castanho);
+  display: none;
+}
+
+.loginform a {
+  text-decoration: none !important;
+  color: var(--castanho);
+  float: right;
+  margin: 1vh;
+}
+
+.loginform form {
+  padding: 2vh;
+  margin-bottom: 0;
+}
+
+.loginform table {
+  text-align: center;
+  color: var(--castanho);
+}
+
+.inputlogin {
+  background: none !important;
+  border: 0 !important;
+  border-bottom: 2px solid var(--castanho) !important;
+}
+
+.gpassword {
+  padding: 10px 0 10px 0;
+  font-size: 13px;
+}
+
+/* Navbar mobile */
+.collapsing {
+  text-align: center;
+}
+
+.show {
+  text-align: center;
+}
+
+.show li:hover {
+  background-color: var(--aclarotrans) !important;
+  margin: 0;
+}
+
+/* Butoes mobile */
+
+.btnlogin {
+  bottom: 0;
+  right: 0;
+  padding: 3vh 1vh 1vh 3vh;
+  position: fixed;
+  font-size: 30px;
+  background-color: var(--castanhotrans);
+  border-top-left-radius: 50px;
+  z-index: 11;
+}
+
+.btnlogin a {
+  text-decoration: none !important;
+  color: var(--branco);
+}
+
+.btnloja {
+  bottom: 0;
+  left: 0;
+  padding: 3vh 3vh 1vh 1vh;
+  position: fixed;
+  font-size: 30px;
+  background-color: var(--castanhotrans);
+  color: var(--branco);
+  border-top-right-radius: 50px;
+  z-index: 11;
+}
+
+.btnvoltarinicio {
+  position: fixed;
+  bottom: 0;
+  z-index: 11;
+}
+
+.btn-link-ini {
+  color: var(--castanhotrans);
+  -webkit-text-stroke: 2px var(--brancotrans);
+}
+
+.btn-link-ini:hover {
+  color: var(--aclaro);
+  -webkit-text-stroke: 2px var(--castanhotrans);
 }
 
 /* Navbar */
 
 .navbar {
-    background: none !important;
-    width: 100%;
-    position: absolute;
-    z-index: 10;
-    max-width: 100%;
-    text-decoration: white !important;
+  width: 100%;
+  z-index: 10;
+  max-width: 100%;
+  text-decoration: white !important;
+  font-size: 15px;
+}
+
+.navbar-brand {
+  vertical-align: middle;
+  font-family: "Ultra", serif;
 }
 
 .navbar a:hover {
-    color: #F2E291 !important;
+  color: var(--castanho) !important;
 }
 
 .nav-link {
-    color: white !important;
+  color: var(--branco) !important;
 }
 
-.navmain>li {
-    margin-left: 30px;
-    margin-right: 30px;
+.navmain > li {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 /* Carousel */
 
 .carousel .carousel-item {
-    height: 800px;
+  height: 800px;
 }
 
 .carousel-item img {
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    min-height: 800px;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 800px;
 }
 
 .carousel-caption {
-    top: 50%;
-    transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: left !important;
+  max-width: 80%;
+  top: 50%;
+  font-size: 15px;
 }
 
 /* Cartoes cervejas */
 
 .mt-0 {
-    margin-top: -4rem !important;
+  margin-top: -4rem !important;
 }
 
 .card {
-    background: none !important;
-    border: none !important;
+  background: none !important;
+  border: none !important;
 }
 
 .card-img-top {
-    border-radius: 0 !important;
-    border: 10px solid #A68D60;
+  border-radius: 0 !important;
+  border: 10px solid #a68d60;
 }
 
 .card-body {
-    font-family: "Special Elite", cursive !important;
+  font-family: "Special Elite", cursive !important;
 }
 
 .card-body .text-primary {
-    color: #A68D60 !important;
+  color: #a68d60 !important;
 }
 
 .txt {
-    z-index: 1 !important;
-    margin-top: -45px !important;
-    font-family: "Special Elite", cursive !important;
-    font-weight: 400;
+  z-index: 1 !important;
+  margin-top: -45px !important;
+  font-family: "Special Elite", cursive !important;
+  font-weight: 400;
 }
 
 .txt a {
-    text-decoration: none;
-    color: #F2E291 !important;
-    background-color: #A68D60;
+  text-decoration: none;
+  color: #f2e291 !important;
+  background-color: #a68d60;
 }
 
-
-
 /* Lojas*/
+
 .titulo-lojas {
-    position: relative;
-    top: 40%;
-    color: #F2E291 !important;
-    font-size: 70px;
-    font-family: "Special Elite", cursive !important;
-    -webkit-text-stroke: 2px #A68D60;
+  position: relative;
+  top: 40%;
+  color: #f2e291 !important;
+  font-family: "Special Elite", cursive !important;
 }
 
 .bg-lojas {
-    background: #F2CC85;
+  background: #f2cc85;
 }
 
 .card-img-overlay button {
-    position: absolute;
-    bottom: 0;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .btn-primary {
-    background: #F2E291;
-    border-radius: 0 !important;
-    border-color: #A68D60;
-    color: #A68D60;
-    font-family: "Special Elite", cursive !important;
-
+  background: #f2e291;
+  border-radius: 0 !important;
+  border-color: #a68d60;
+  color: #a68d60;
+  font-family: "Special Elite", cursive !important;
 }
 
 .btn-primary:hover {
-    background: #A68D60;
-    border-color: #F2E291;
+  background: #a68d60;
+  border-color: #f2e291;
+}
+
+/* Info Fabrica */
+
+.factory {
+  background-image: url("../Img/fabrica.jpg") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 10px solid var(--castanho);
+  color: var(--atorrado);
+  min-height: 70%; /* aqui */
+}
+
+.factory h3 {
+  background-color: var(--castanho) !important;
+  color: white;
+  display: table; /* keep the background color wrapped tight */
+  padding: 5px;
+  font-size: 20px;
+  background-color: green;
+  color: #ffffff;
+}
+/* Footer */
+
+footer {
+  background-color: var(--atorrado);
 }
