@@ -98,6 +98,12 @@
   .footer-terms li {
     display: inline !important;
   }
+
+  /* pagina contactos */
+  .contacts-main {
+    margin: 20% 0 0 5% !important;
+    max-width: 50% !important;
+  }
 }
 
 /*cdesktops, 992px and up */
@@ -137,6 +143,9 @@
   .titulo-lojas {
     font-size: 3.12em;
     -webkit-text-stroke: 2px #a68d60;
+  }
+  .form-contacts-box {
+    margin-top: -13%;
   }
 }
 
@@ -543,4 +552,91 @@ footer input::placeholder {
 
 .footer-terms li a:hover {
   color: var(--aclaro);
+}
+
+/* Página contactos */
+
+/* Secçao inicial */
+
+.contacts {
+  min-height: 800px !important;
+  background-image: url("../Img/bg-contactos.jpg");
+  background-size: cover;
+}
+
+.contacts-main {
+  margin: 30% 0 0 5%;
+  max-width: 90%;
+}
+
+.contacts-main h1 {
+  color: var(--branco);
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.contacts-main p {
+  color: var(--branco);
+  background-color: var(--castanhotrans);
+}
+
+/* Secção form/contactos */
+
+.contacts-numbers {
+  color: var(--castanho);
+  padding: 5 !important;
+}
+.contacts-numbers h3 {
+  text-transform: uppercase;
+}
+
+.form-contacts-box {
+  background-color: var(--aclaro);
+  z-index: 3;
+  border: 10px solid var(--castanho);
+  color: var(--castanho);
+}
+
+.form-contacts-box h2 {
+  font-size: 3em;
+  margin: 1em 0 0 0.2em;
+}
+
+.form-contacts-box table {
+  width: 100%;
+  text-align: center;
+}
+
+.form-contacts-box input,
+select,
+textarea {
+  width: 100%;
+  margin-top: 20;
+  border: 3px solid var(--castanho);
+  color: var(--castanho) !important;
+  background-color: var(--atorrado);
+  resize: none;
+}
+
+.form-contacts-box input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: var(--castanho) !important;
+  font-size: 1em;
+}
+
+.form-contacts-box input {
+  height: 2em;
+}
+
+.form-contacts-box button {
+  background-color: var(--atorrado) !important;
+  color: var(--castanho);
+  border: 2px solid var(--castanho);
+}
+
+.form-contacts-box button:hover {
+  background-color: var(--castanho) !important;
+  color: var(--branco);
+  border: 2px solid var(--atorrado);
 }
