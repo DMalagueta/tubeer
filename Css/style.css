@@ -161,7 +161,6 @@
 }
 
 /* cores utilizadas*/
-
 :root {
   --branco: #e9f0f2;
   --brancotrans: #e9f0f2b7;
@@ -175,11 +174,14 @@
   --pretotrans: #0d0d0db7;
 }
 
+html {
+  scroll-behavior: scroll !important;
+}
+
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -188,7 +190,6 @@ body {
 }
 
 /* Formulario Login */
-
 .loginform {
   position: fixed;
   top: 15%;
@@ -262,8 +263,8 @@ body {
   height: 2.2em !important;
   width: 2.2em !important;
 }
-/* Butoes mobile */
 
+/* Butoes mobile */
 .btnlogin {
   bottom: 0;
   right: 0;
@@ -311,7 +312,6 @@ body {
 }
 
 /* Navbar */
-
 .navbar {
   width: 100%;
   z-index: 10;
@@ -347,8 +347,8 @@ body {
 .navbuttons button:hover {
   color: var(--castanho) !important;
 }
-/* Carousel */
 
+/* Carousel */
 .carousel .carousel-item {
   height: 800px;
 }
@@ -370,7 +370,6 @@ body {
 }
 
 /* Cartoes cervejas */
-
 .mt-0 {
   margin-top: -4rem !important;
 }
@@ -407,7 +406,6 @@ body {
 }
 
 /* Lojas*/
-
 .titulo-lojas {
   position: relative;
   top: 40%;
@@ -445,7 +443,6 @@ body {
 }
 
 /* Info Fabrica */
-
 .factory {
   background-image: url("../Img/fabrica.jpg") !important;
   background-position: center;
@@ -477,7 +474,6 @@ body {
 }
 
 /* Footer */
-
 footer {
   background-color: var(--atorrado);
   color: var(--castanho);
@@ -557,7 +553,6 @@ footer input::placeholder {
 /* Página contactos */
 
 /* Secçao inicial */
-
 .contacts {
   min-height: 800px !important;
   background-image: url("../Img/bg-contactos.jpg");
@@ -581,7 +576,6 @@ footer input::placeholder {
 }
 
 /* Secção form/contactos */
-
 .contacts-numbers {
   color: var(--castanho);
   padding: 5 !important;
@@ -639,4 +633,9 @@ textarea::placeholder {
   background-color: var(--castanho) !important;
   color: var(--branco);
   border: 2px solid var(--atorrado);
+}
+
+a[id="linklojas"]:target ~ #lojas {
+  -webkit-transform: translateY(500px);
+  transform: translateY(-500px);
 }
