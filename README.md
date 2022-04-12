@@ -1,7 +1,7 @@
 
 # Tubeer - Craft beer website
 
-Tubeer is a website created for a school project.
+Tubeer is a Brewery responsive website made for a school project
 
 
 
